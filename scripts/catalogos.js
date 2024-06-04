@@ -1,4 +1,4 @@
-let catalogo = [
+const catalogos = [
     { 
         codigo: 'P0001', 
         categoria: 'Juegos de Tablero',

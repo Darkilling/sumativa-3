@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <title>INACAPLudi Marketplace</title>
     <link rel="stylesheet" href="styles/styleindex.css">
-    <link rel="script" href="scripts/catalogo.js">
+    <script src="./scripts/catalogos.js"></script>
+    <script src="./scripts/index.js" defer></script>
+
 </head>
 <body>
     <h1>bienvenido a INACAPLudi</h1>
     <a href="login.html">Cerrar Sesion</a>
+    <header>
+        <nav>
+          <a href="./index.html"><img src="./" id="logo" alt="logo"></a>
+          <div>
+            <a href="#checkout">Checkout</a>
+            <a href="#profile">Perfil</a>
+            <a href="cart.html"><img src="./assets/Carrito.png" alt="carrito de compra"><span id="cuenta-carrito">0</span></a>
+          </div>  
+        </nav>
+    </header>
    
     <main>
-        <section id="catalogo"></section>
-        <aside id="cart">
-            <h2>Carrito</h2>
-            <ul id="cart-items"></ul>
-            <button id="checkout-button">Checkout</button>
-        </aside>
+        <section id="producto-container"></section>
     </main>
-    <script src="scripts/catalogo.js"></script>
-    <script src="scripts/script.js"></script>
+    <footer></footer>
 </body>
 </html>
