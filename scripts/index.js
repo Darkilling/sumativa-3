@@ -9,7 +9,7 @@ function crearTarjetasProductosInicio(productos){
          <img src=${producto.imagen}>
             <h3>${producto.nombre}</h3>
             <p>Categoria: ${producto.categoria}</p>
-            <p>${producto.descripcion}</p>
+            <p>Descripcion: ${producto.descripcion}</p>
             <p>Ubicación: ${producto.ubicacion}</p>
             <p>Disponibilidad: ${producto.disponibilidad} unidades</p>
             <p>Tiempo de préstamo: ${producto.tiempo} días</p>

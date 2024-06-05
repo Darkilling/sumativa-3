@@ -1,8 +1,8 @@
 
 :root{
-    --color-fundo: #b92424;
-    --color-texto: #08c5c5;
-    --color-acento: #000000;
+    --color-fundo: #ff5353;
+    --color-texto: #ff0101;
+    --color-acento: #aa4747;
 }
 
 body{
@@ -12,6 +12,16 @@ body{
     flex-direction: column;
     height: 100vh;
 
+}
+
+h1{
+    text-align: center;
+    color: var(--color-texto);
+
+}
+
+h3, p{
+    margin: 6px 0;
 }
 
 
@@ -24,9 +34,18 @@ a:hover:not(#cart){
     color: var(--color-acento);
 }
 
+button{
+    background-color: var(--color-acento);
+    color: white;
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
 header{
     box-shadow: 0 3px 5px rgba(0,0,0,0.104);
     padding: 10px 0;
+    margin-bottom: 10px;
 
 }
 
@@ -45,7 +64,7 @@ header nav div{
 }
 
 #cuenta-carrito{
-    background-color: var(--color-acento);
+    background-color: #0f0f0f;);
     border-radius: 100%;
     display: inline-block;
     width: 20px;
