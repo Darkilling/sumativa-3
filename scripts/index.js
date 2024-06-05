@@ -1,12 +1,21 @@
-const contenedorTarjetas = document.querySelector("producto-container");
+const contenedorTarjetas = document.getElementById("productos-container");
 
 
 function crearTarjetasProductosInicio(productos){
     productos.forEach(producto => {
         const nuevoCatalogo = document.createElement('div');
         nuevoCatalogo.classList = "tarjeta-producto";
+        nuevoCatalogo.innerHTML = `
+         <img src="./assets/productos"${producto.id}.jpg>
+            <h3>${producto.nombre}</h3>
+            <p>${producto.descripcion}</p>
+            <p class="precio">$${producto.precio}</p>
+            <p>Disponibilidad: ${producto.disponibilidad} unidades</p>
+            <p>Tiempo de préstamo: ${producto.tiempo} días</p>
+            <button>Agregar al Carrito</button>
+        `
         contenedorTarjetas.appendChild(nuevoCatalogo);
     });
 }
 
-crearTarjetasProductosInicio(catalogos);
+crearTarjetasProductosInicio(catalogo);
