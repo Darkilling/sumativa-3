@@ -3,13 +3,14 @@ const contenedorTarjetas = document.getElementById("productos-container");
 
 function crearTarjetasProductosInicio(productos){
     productos.forEach(producto => {
-        const nuevoCatalogo = document.createElement('div');
+        const nuevoCatalogo = document.createElement("div");
         nuevoCatalogo.classList = "tarjeta-producto";
         nuevoCatalogo.innerHTML = `
-         <img src="./assets/productos"${producto.id}.jpg>
+         <img src=${producto.imagen}>
             <h3>${producto.nombre}</h3>
+            <p>Categoria: ${producto.categoria}</p>
             <p>${producto.descripcion}</p>
-            <p class="precio">$${producto.precio}</p>
+            <p>Ubicación: ${producto.ubicacion}</p>
             <p>Disponibilidad: ${producto.disponibilidad} unidades</p>
             <p>Tiempo de préstamo: ${producto.tiempo} días</p>
             <button>Agregar al Carrito</button>
@@ -18,4 +19,4 @@ function crearTarjetasProductosInicio(productos){
     });
 }
 
-crearTarjetasProductosInicio(catalogo);
+crearTarjetasProductosInicio(catalogos);
