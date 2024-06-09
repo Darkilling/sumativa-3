@@ -34,3 +34,40 @@ h3, p{
     height: 200px;
     object-fit: cover;
 }
+
+.scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem rgba(0,0,0,0.1);
+}
+
+.scroll img{
+    filter: invert(15%);
+}
+
+.cart{
+    margin: 100px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: palegreen;
+    border-style: groove;
+    font-size: 20px;
+}
+
+.ad-to-cart{
+    border: turquoise;
+    border-style: groove;
+    font-size: 20px;
+
+}
+
+.clear-cart {
+    background-color: red;
+    color: #ffdddd;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}

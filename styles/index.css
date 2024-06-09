@@ -51,7 +51,8 @@ button{
 header{
     box-shadow: 0 3px 5px rgba(0,0,0,0.104);
     padding: 10px 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    bottom: 122px;
 
 }
 
@@ -59,7 +60,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-self: center;
-    margin: 0 60px;
+    margin: 80px 60px;
 }
 
 header nav div{
@@ -71,7 +72,7 @@ header nav div{
 }
 
 #cuenta-carrito{
-    background-color: #0f0f0f;);
+    background-color: #ffffff;);
     border-radius: 100%;
     display: inline-block;
     width: 20px;
@@ -83,11 +84,11 @@ header nav div{
 }
 
 #logo{
-    height: 40px;
+    height: 50px;
 }
 
 header nav img{
-    height: 25px;
+    height: 40px;
 }
 
 
