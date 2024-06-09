@@ -13,11 +13,10 @@ function crearTarjetasProductosInicio(productos){
             <p>Ubicación: ${producto.ubicacion}</p>
             <p>Disponibilidad: ${producto.disponibilidad} unidades</p>
             <p>Tiempo de préstamo: ${producto.tiempo} días</p>
-            <button>Agregar al carrito</button>
+            <button>Agregar al Carrito</button>
         `
         contenedorTarjetas.appendChild(nuevoCatalogo);
-
-        
+        nuevoCatalogo.getElementsByTagName("button")[0].addEventListener("click", () => agregarAlCarrito(producto))
     });
 }
 
