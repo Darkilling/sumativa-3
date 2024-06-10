@@ -33,8 +33,8 @@ footer{
 header h1{
     text-align: center;
     font-size: 50px;
-    background-color: #ff000028; */
-    color: #000000;
+    background-color: #ddcfcf28; 
+    color: #020202;
     padding: 20px 10px;
 }
 .contenedor{
@@ -45,10 +45,9 @@ header h1{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /* oculto lo que queda fuera del .contenedor */
     contain: paint;
 }
-/* SECCION CONTENEDOR DE ITEMS */
+
 .contenedor .contenedor-items{
     margin-top: 30px;
     background-color: #0f0707;
@@ -57,7 +56,6 @@ header h1{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
     grid-row-gap: 30px;
-    /* width: 60%; */
     width: 100%;
     transition: .3s;
 }

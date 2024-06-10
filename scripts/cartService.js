@@ -50,9 +50,9 @@ function pagarClicked(){
         carritoItems.removeChild(carritoItems.firstChild)
     }
     actualizarTotalCarrito();
-    ocultarCarrito();
+    ocultarCarrito();S
 }
-//Funciòn que controla el boton clickeado de agregar al carrito
+
 function agregarAlCarritoClicked(event){
     var button = event.target;
     var item = button.parentElement;
