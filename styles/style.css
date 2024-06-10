@@ -22,7 +22,7 @@ body{
 }
 footer{
   
-    color: #000000;
+    color: #f8eeee;
     text-align: center;
     padding: 20px 0;
     position: over;
@@ -38,7 +38,7 @@ header h1{
     padding: 20px 10px;
 }
 .contenedor{
-    max-width: 1200px;
+    max-width:100%;
     color: #000;
     background-color: #f3f3f3;
     padding: none;

@@ -10,40 +10,40 @@ if(document.readyState == 'loading'){
 
 function ready(){
     
-    //Agregremos funcionalidad a los botones eliminar del carrito
+    
     var botonesEliminarItem = document.getElementsByClassName('btn-eliminar');
     for(var i=0;i<botonesEliminarItem.length; i++){
         var button = botonesEliminarItem[i];
         button.addEventListener('click',eliminarItemCarrito);
     }
 
-    //Agrego funcionalidad al boton sumar cantidad
+    
     var botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
     for(var i=0;i<botonesSumarCantidad.length; i++){
         var button = botonesSumarCantidad[i];
         button.addEventListener('click',sumarCantidad);
     }
 
-     //Agrego funcionalidad al buton restar cantidad
+     
     var botonesRestarCantidad = document.getElementsByClassName('restar-cantidad');
     for(var i=0;i<botonesRestarCantidad.length; i++){
         var button = botonesRestarCantidad[i];
         button.addEventListener('click',restarCantidad);
     }
 
-    //Agregamos funcionalidad al boton Agregar al carrito
+    
     var botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
     for(var i=0; i<botonesAgregarAlCarrito.length;i++){
         var button = botonesAgregarAlCarrito[i];
         button.addEventListener('click', agregarAlCarritoClicked);
     }
 
-    //Agregamos funcionalidad al botón comprar
+    
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por la compra");
+    alert("Gracias por el Pedido");
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
@@ -66,7 +66,7 @@ function agregarAlCarritoClicked(event){
     hacerVisibleCarrito();
 }
 
-//Funcion que hace visible el carrito
+
 function hacerVisibleCarrito(){
     carritoVisible = true;
     var carrito = document.getElementsByClassName('carrito')[0];
@@ -77,7 +77,7 @@ function hacerVisibleCarrito(){
     items.style.width = '60%';
 }
 
-//Funciòn que agrega un item al carrito
+
 function agregarItemAlCarrito(titulo, cantidad, imagenSrc){
     var item = document.createElement('div');
     item.classList.add = ('item');
@@ -98,14 +98,14 @@ function agregarItemAlCarrito(titulo, cantidad, imagenSrc){
             <div class="carrito-item-detalles">
                 <span class="carrito-item-titulo">${titulo}</span>
                 <div class="selector-cantidad">
-                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <i class="fa-solid fa-minus restar-cantidad">-</i>
                     <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    <i class="fa-solid fa-plus sumar-cantidad">+</i>
                 </div>
                 <span class="carrito-item-precio">${cantidad}</span>
             </div>
             <button class="btn-eliminar">
-                <i class="fa-solid fa-trash"></i>
+                <i class="fa-solid fa-trash">eliminar</i>
             </button>
         </div>
     `
@@ -184,7 +184,7 @@ function actualizarTotalCarrito(){
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
         //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
+        var precio = parseFloat(precioElemento.innerText);
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
         console.log(precio);
         var cantidad = cantidadItem.value;
@@ -192,6 +192,6 @@ function actualizarTotalCarrito(){
     }
     total = Math.round(total * 100)/100;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = ' '+total.toLocaleString("es") + " ";
 
 }

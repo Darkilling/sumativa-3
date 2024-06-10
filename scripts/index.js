@@ -1,3 +1,5 @@
+//no esta funcionando pero en base a esto tambien se puede llamar los items
+
 const contenedorTarjetas = document.getElementById("productos-container");
 
 
